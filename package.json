@@ -1,4 +1,6 @@
 {
+  "homepage": "https://github.com/Kiosak/Weather",
+  "gh-pages": "https://github.com/Kiosak/Weather",
   "name": "app-3",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +11,8 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
